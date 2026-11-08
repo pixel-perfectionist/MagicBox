@@ -91,7 +91,7 @@ export const appMenuInit = () =>
         submenu: [
           {
             click: () => {
-              shell.openExternal("https://github.com/akatrukhin/MagicBox");
+              shell.openExternal("https://github.com/pixel-perfectionist/MagicBox");
             },
             label: "Learn more",
           },
