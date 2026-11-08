@@ -12,7 +12,7 @@ autoUpdater.logger = log;
 export function autoUpdaterInit() {
   autoUpdater.setFeedURL({
     provider: "github",
-    owner: "akatrukhin",
+    owner: "pixel-perfectionist",
     repo: "MagicBox",
   });
   if (isDev) {

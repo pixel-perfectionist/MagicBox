@@ -207,7 +207,7 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "akatrukhin",
+        "owner": "pixel-perfectionist",
         "repo": "MagicBox"
       }
     ],
