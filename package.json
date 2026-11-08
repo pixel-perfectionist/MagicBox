@@ -1,6 +1,6 @@
 {
   "name": "magic-box",
-  "homepage": "https://www.katrukhin.com/MagicBox",
+  "homepage": "https://github.com/pixel-perfectionist/MagicBox",
   "version": "0.1.6",
   "description": "Organize your workspace, keep files optimized, prepare images for publishing",
   "author": {
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/akatrukhin/MagicBox.git"
+    "url": "git+https://github.com/pixel-perfectionist/MagicBox.git"
   },
-  "license": "CC-BY-4.0",
+  "license": "CC-BY-NC-4.0",
   "keywords": [
     "MagicBox",
     "files optimization",

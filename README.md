@@ -1,48 +1,51 @@
-MagicBox is a tool to minify images, graphics, design source files. Organize a workspace by creating file sets, assign them to project, track file updates, export to project.
+<div align="center">
+
+# MagicBox
+
+**Optimize, organize, and export design assets from one desktop app.**
+
+Minify images, graphics, and design source files. Group them into file sets, assign them to projects, track updates, and export them where they belong.
+
+[![Latest release](https://img.shields.io/github/v/release/pixel-perfectionist/MagicBox?label=release)](https://github.com/pixel-perfectionist/MagicBox/releases/latest)
+[![GitHub stars](https://img.shields.io/github/stars/pixel-perfectionist/MagicBox?style=flat)](https://github.com/pixel-perfectionist/MagicBox/stargazers)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg)](LICENSE.md)
+[![Built with Electron](https://img.shields.io/badge/Electron-Angular-47848F.svg)](#getting-started)
+
+[**Download for macOS**](https://github.com/pixel-perfectionist/MagicBox/releases/latest) · [Watch the demo](https://vimeo.com/940583258) · [Report a bug](https://github.com/pixel-perfectionist/MagicBox/issues/new)
+
+[![MagicBox demo](https://i.imgur.com/iB1uC9X.jpeg)](https://vimeo.com/940583258 "Watch the MagicBox demo")
+
+</div>
 
 ## Features
-[![MagicBox](https://i.imgur.com/iB1uC9X.jpeg)](https://vimeo.com/940583258 "MagicBox")
 
-- Icon manager
-- Font manager\*
-- Sketch App files optimization
-- Reduce files size:
-- Optimize and reduce files
-- Followed formats supported:
-  - SVG
-  - JPEG
-  - PNG
-  - GIF
-  - WEBP
-  - TIFF
-  - SKETCH
-- SVG Editor
-- Conver SVG to:
+- **Shrink file size** for SVG, JPEG, PNG, GIF, WebP, TIFF, and Sketch files
+- **Organize your workspace** with file sets assigned to projects, with update tracking
+- **Icon manager** for browsing and exporting icon sets
+- **SVG editor** built in
+- **Convert SVG** to:
   - Base64 string
   - CSS background (URI encoded)
-  - React ready\*
-  - Serializing CG/UIPaths (iOS, MacOS)
-- PX to REM converter\*
+  - Serialized CG/UIPaths for iOS and macOS
+- **Sketch file optimization**
 
-<sup><i>\*Comming soon</i></sup>
+### Coming soon
 
-#
+- Font manager
+- SVG to React component
+- PX to REM converter
 
-[![Author](https://img.shields.io/badge/Author-katrukhin-brightgreen.svg)](https://katrukhin.com)
-![License: CC-NC](https://img.shields.io/badge/License-CCNC-blue.svg)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-brightgreen.svg)](https://paypal.me/katrukhin)
-[![Repo Link](https://img.shields.io/badge/Repo-Link-black.svg)](https://github.com/akatrukhin/MagicBox)
+## Download
 
-## Contributing
+Get the latest `.dmg` from the [Releases page](https://github.com/pixel-perfectionist/MagicBox/releases/latest). Windows and Linux builds can be made from source (see below).
 
-Pull Requests are welcome!
+## Getting started
 
-### Getting Started
-
-Clone this repository locally:
+Clone the repository:
 
 ```bash
-git clone https://github.com/akatrukhin/MagicBox.git
+git clone https://github.com/pixel-perfectionist/MagicBox.git
+cd MagicBox
 ```
 
 Install dependencies with npm:
@@ -51,35 +54,39 @@ Install dependencies with npm:
 npm install
 ```
 
-There is an issue with `yarn` and `node_modules` when the application is built by the packager. Please use `npm` as dependencies manager.
+> Use `npm`, not `yarn`. The packager has an issue with `node_modules` created by `yarn`.
 
-### To build for development
-
-**in a terminal window**
+Start the app in development mode:
 
 ```bash
 npm run electron:local
 ```
 
-### Included Commands
+### Commands
 
-| Command                    | Description                                                                          |
-| -------------------------- | ------------------------------------------------------------------------------------ |
-| `npm run electron:local`   | Builds your application and start electron                                           |
-| `npm run electron:build`   | Builds your application and creates an app consumable based on your operating system |
-| `npm run electron:mac`     | MacOS Build                                                                          |
-| `npm run electron:windows` | Windows Build                                                                        |
-| `npm run electron:linux`   | Linux Build                                                                          |
+| Command                              | Description                                           |
+| ------------------------------------ | ----------------------------------------------------- |
+| `npm start`                          | Run Angular dev server and Electron with live reload  |
+| `npm run electron:local`             | Production build, then start Electron                 |
+| `npm run electron:build`             | Build an installer for your current operating system  |
+| `npm run electron:build -- --mac`    | Build for macOS                                       |
+| `npm run electron:build -- --win`    | Build for Windows                                     |
+| `npm run electron:build -- --linux`  | Build for Linux                                       |
+| `npm test`                           | Run unit tests                                        |
+| `npm run lint`                       | Lint the project                                      |
 
-Please run prettier on all of your PRs before submitting, this can be done with `prettier --write` in the project directory
+## Contributing
+
+Pull requests are welcome. Before you open one, run `prettier --write` in the project directory.
+
+If MagicBox saves you time, a ⭐ on the repo helps other people find it.
 
 ## License
 
-This project is licensed under the [CC BY-NC 4.0](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
+[CC BY-NC 4.0](LICENSE.md). Free to use and modify for non-commercial purposes.
 
-## Authors
+## Author
 
-- **Alexander Katrukhin** - _Provided README Template_ -
-  [akatrukhin](https://github.com/akatrukhin)
+**Alexander Katrukhin** · [@pixel-perfectionist](https://github.com/pixel-perfectionist) · [ux-engineer.com](https://ux-engineer.com)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-brightgreen.svg)](https://paypal.me/katrukhin)
